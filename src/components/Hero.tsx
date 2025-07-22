@@ -37,7 +37,7 @@ const Hero = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-5xl md:text-7xl font-bold text-white mb-6 font-mono"
         >
-          <span className="text-green-400">#</span>Kartik_Kar
+          <span className="text-green-400">//</span>Kartik_Kar
         </motion.h1>
         
         <motion.div
@@ -87,7 +87,7 @@ const Hero = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/resume.pdf"
+            href="https://docs.google.com/document/d/1wu0hztUSs9sfdRouMLwYbnJ34pSzldHuEEDlxgWAzSE/edit?usp=sharing"
             download
             className="flex items-center justify-center space-x-2 border-2 border-gray-600 hover:border-green-400 text-gray-300 hover:text-green-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-200 hover:bg-gray-800/50 text-sm sm:text-base"
           >
