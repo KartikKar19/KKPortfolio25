@@ -309,7 +309,7 @@ const Projects = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://github.com"
+            href="https://github.com/KartikKar19"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 border-2 border-gray-600 hover:border-green-400 text-gray-300 hover:text-green-400 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-gray-800/50 font-mono"
