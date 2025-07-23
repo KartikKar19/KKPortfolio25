@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Code, Trophy, Target, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
+import fetchLeetCodeStats from '../utils/fetchLeetCodeStats';
+
 
 const LeetCode = () => {
   const [stats, setStats] = useState({
@@ -14,19 +16,22 @@ const LeetCode = () => {
   });
 
   useEffect(() => {
-    // Mock LeetCode stats for demo
-    setTimeout(() => {
-      setStats({
-        totalSolved: 342,
-        easy: 156,
-        medium: 142,
-        hard: 44,
-        ranking: 15420,
-        streak: 23,
-        loading: false
-      });
-    }, 1000);
-  }, []);
+  const getStats = async () => {
+    try {
+      console.log("Fetching LeetCode stats...");
+      const realStats = await fetchLeetCodeStats("Kartikkark"); 
+      console.log("Fetched stats:", realStats);
+      setStats({ ...realStats, loading: false });
+    } catch (error) {
+      console.error("Failed to fetch LeetCode stats", error);
+      setStats((prev) => ({ ...prev, loading: false })); // <-- ensure loading is false on error
+    }
+  };
+
+  getStats();
+}, []);
+
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -182,8 +187,8 @@ const LeetCode = () => {
             <span className="text-green-400">function</span> keepSolving() <span className="text-green-400">{'{'}</span>
           </h3>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto font-mono mb-4">
-            <span className="text-blue-400">const</span> goal = <span className="text-yellow-400">"master algorithms & data structures"</span>;<br/>
-            <span className="text-blue-400">return</span> consistency + practice + growth;
+            <span className="text-blue-400">const</span> goal = <span className="text-yellow-400">"Master DSA"</span>;<br/>
+            <span className="text-blue-400">return</span> consistency + practice + sleep;
           </p>
           <p className="text-green-400 font-mono">{'}'}</p>
           
