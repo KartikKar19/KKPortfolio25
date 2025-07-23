@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Github, ExternalLink, Star, GitFork, Eye } from 'lucide-react';
+import { Github, ExternalLink, Star, GitFork, Eye, AlarmSmoke, Laptop } from 'lucide-react';
 import { motion } from 'framer-motion';
 import axios from 'axios';
+import { image } from 'framer-motion/client';
 
 interface GitHubRepo {
   id: number;
@@ -29,8 +30,18 @@ const Projects = () => {
       technologies: ['MERN Stack', 'GSAP', 'Tailwind', 'Material UI'],
       stars: 89,
       forks: 23,
-      github: 'https://github.com',
+      github: 'https://github.com/KartikKar19/Tomato-Food-Delivery-Website',
       demo: 'https://example.com',
+      featured: true
+    },
+    {
+      title: 'LazyVideo - Video Streaming App',
+      description: 'Lazyvideocontroller is a real-time hand gesture recognition system that uses your webcam to detect raised fingers and simulate corresponding keyboard actions using Python libraries. This allows gesture-based control for various applications such as video navigation, gaming, and automation.',
+      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'TypeScript', 'CSS3', 'Lazy Loading'],
+      stars: 0,
+      forks: 0,
+      github: 'https://github.com/KartikKar19/lazyvideocontroller',
       featured: true
     },
     {
@@ -38,10 +49,10 @@ const Projects = () => {
       description: 'Built 20+ reusable React components with custom animations, Map API integration for gym location, and responsive design increasing user retention by 25%.',
       image: 'https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React', 'Map API', 'CSS3', 'Responsive Design'],
-      stars: 67,
-      forks: 18,
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      stars: 0,
+      forks: 0,
+      github: 'https://github.com/KartikKar19/FITME-Gym-website',
+      demo: 'https://github.com/KartikKar19/FITME-Gym-website',
       featured: true
     }
   ];
@@ -49,7 +60,7 @@ const Projects = () => {
   useEffect(() => {
   const fetchRepos = async () => {
     try {
-      const response = await axios.get('https://api.github.com/users/KartikKar19/repos?per_page=9&sort=updated', {
+      const response = await axios.get('https://api.github.com/users/KartikKar19/repos?per_page=15&sort=updated', {
         headers: {
           Accept: 'application/vnd.github.mercy-preview+json'
         }
