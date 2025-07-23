@@ -39,7 +39,7 @@ const WebsiteFeatures = () => {
     {
       icon: Zap,
       title: 'Smooth Performance',
-      description: 'Optimized animations and lazy loading for lightning-fast user experience. I am a small time developer but somehow if everyone gets to know me and track my progress then I would be fforced to move my static files on my website to a CDN like Amazon CloudFront😉😉',
+      description: 'Optimized animations and lazy loading for lightning-fast user experience. I am a small time developer but somehow if everyone gets to know me and track my progress then I would be forced to move my static files on my website to a CDN like Amazon CloudFront😉😉',
       color: 'text-green-400',
       bgColor: 'bg-green-900'
     },

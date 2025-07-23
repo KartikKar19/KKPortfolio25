@@ -50,7 +50,7 @@ const Skills = () => {
             <span className="text-green-400">while</span> (alive) <span className="text-green-400">{'{'}</span>
           </h3>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto font-mono">
-            <span className="text-blue-400">learn</span>(); <span className="text-gray-500">// AI will take my job😭😭</span><br/>
+            <span className="text-blue-400">learn</span>(); <span className="text-gray-500">// Or AI will take my job😭😭</span><br/>
             <span className="text-blue-400">code</span>(); <span className="text-gray-500">// Building your smiles☺️☺️</span><br/>
             <span className="text-blue-400">share</span>(); <span className="text-gray-500">// Letsgooo Copy Paste😋😋</span>
           </p>
