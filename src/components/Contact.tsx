@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, MessageSquare } from 'lucide-react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+import successTick from '../assets/success-tick.json'; // Use a Lottie file
+import Lottie from 'lottie-react';
 
 const Contact = () => {
+  const [formSuccess, setFormSuccess] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,16 +25,38 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setIsSubmitting(false);
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const serviceID = 'service_2o8w52t';
+  const templateID = 'template_cobj90j';
+  const ackTemplateID = 'template_ud6eju1';
+  const publicKey = '8sgJsGMg2VBOMElkI';
+
+  const templateParams = {
+    name: formData.name,
+    email: formData.email,
+    subject: formData.subject,
+    message: formData.message,
+    user_email: formData.email, // for ack template
+    user_name: formData.name    // for ack template
   };
+
+  try {
+    await emailjs.send(serviceID, templateID, templateParams, publicKey);
+    await emailjs.send(serviceID, ackTemplateID, templateParams, publicKey);
+    setFormSuccess(true);
+    setFormData({ name: '', email: '', subject: '', message: '' });
+    setTimeout(() => setFormSuccess(false), 5000);
+  } catch (error) {
+    console.error('Email sending failed:', error);
+  }
+
+  setIsSubmitting(false);
+};
+
+
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -224,26 +251,32 @@ const Contact = () => {
                   placeholder="Tell me about your project..."
                 />
               </div>
-              
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-200 flex items-center justify-center space-x-2 border border-green-500 font-mono disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? (
-                  <>
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                    <span>Sending...</span>
-                  </>
-                ) : (
-                  <>
-                    <Send size={20} />
-                    <span>Send Message</span>
-                  </>
-                )}
-              </motion.button>
+              {formSuccess ? (
+  <div className="flex justify-center items-center mt-8">
+    <Lottie animationData={successTick} loop={false} style={{ height: 120, width: 120 }} />
+    <p className="text-green-700 font-semibold mt-4 text-center">Message Sent Successfully!</p>
+  </div>
+) : (
+  <motion.button
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+    type="submit"
+    disabled={isSubmitting}
+    className="w-full bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-200 flex items-center justify-center space-x-2 border border-green-500 font-mono disabled:opacity-50 disabled:cursor-not-allowed"
+  >
+    {isSubmitting ? (
+      <>
+        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+        <span>Sending...</span>
+      </>
+    ) : (
+      <>
+        <Send size={20} />
+        <span>Send Message</span>
+      </>
+    )}
+  </motion.button>
+)}
             </form>
             <p className="text-green-400 font-mono mt-6">{'}'}</p>
           </motion.div>
