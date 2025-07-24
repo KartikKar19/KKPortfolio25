@@ -113,7 +113,7 @@ const AnimatedSkills = () => {
                 <motion.div
                   key={`${skill.name}-${index}`}
                   whileHover={{ scale: 1.1, y: -5 }}
-                  className="flex-shrink-0 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 hover:border-green-400 transition-all duration-200 cursor-pointer min-w-max"
+                  className="cursor-target flex-shrink-0 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 hover:border-green-400 transition-all duration-200 cursor-pointer min-w-max"
                 >
                   <div className="flex items-center space-x-2">
                     <span className="text-xl">{skill.icon}</span>

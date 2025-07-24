@@ -130,7 +130,7 @@ const Certifications = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.02, y: -5 }}
-              className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400 transition-all duration-300 shadow-lg hover:shadow-green-400/10"
+              className="cursor-target bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400 transition-all duration-300 shadow-lg hover:shadow-green-400/10"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-3">
@@ -208,7 +208,7 @@ const Certifications = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="mt-16 bg-gradient-to-r from-gray-800 to-black border border-gray-700 rounded-lg p-8 text-center"
+          className="cursor-target mt-16 bg-gradient-to-r from-gray-800 to-black border border-gray-700 rounded-lg p-8 text-center"
         >
           <h3 className="text-2xl font-bold text-white mb-4 font-mono">
             <span className="text-green-400">while</span> (learning) <span className="text-green-400">{'{'}</span>

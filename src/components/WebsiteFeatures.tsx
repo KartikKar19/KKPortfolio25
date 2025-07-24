@@ -134,7 +134,7 @@ const WebsiteFeatures = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -10 }}
-              className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400 transition-all duration-300 shadow-lg hover:shadow-green-400/10"
+              className="cursor-target bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400 transition-all duration-300 shadow-lg hover:shadow-green-400/10"
             >
               <div className={`${feature.bgColor} w-12 h-12 rounded-lg flex items-center justify-center mb-4 border border-gray-600`}>
                 <feature.icon className={feature.color} size={24} />

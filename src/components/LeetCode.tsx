@@ -146,7 +146,7 @@ const LeetCode = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400 transition-all duration-300"
+              className="cursor-target bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400 transition-all duration-300"
             >
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-white font-mono">{item.difficulty}</h3>
@@ -181,7 +181,7 @@ const LeetCode = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-8 text-center"
+          className="cursor-target bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-8 text-center"
         >
           <h3 className="text-2xl font-bold text-white mb-4 font-mono">
             <span className="text-green-400">function</span> keepSolving() <span className="text-green-400">{'{'}</span>
@@ -195,10 +195,10 @@ const LeetCode = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://leetcode.com"
+            href="https://leetcode.com/Kartikkark"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-2 bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors duration-200 mt-6 border border-orange-500"
+            className="cursor-target inline-flex items-center space-x-2 bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors duration-200 mt-6 border border-orange-500"
           >
             <Code size={20} />
             <span>View LeetCode Profile</span>

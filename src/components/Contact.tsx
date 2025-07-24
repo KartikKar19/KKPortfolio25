@@ -99,7 +99,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-gray-900 border border-gray-700 rounded-lg p-8 mb-8 hover:border-green-400 transition-all duration-300">
+            <div className="cursor-target bg-gray-900 border border-gray-700 rounded-lg p-8 mb-8 hover:border-green-400 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-6 font-mono">
                 <span className="text-green-400">const</span> contactInfo = <span className="text-green-400">{'{'}</span>
               </h3>
@@ -107,7 +107,7 @@ const Contact = () => {
               <div className="space-y-6 font-mono">
                 <motion.div 
                   whileHover={{ x: 10 }}
-                  className="flex items-center group"
+                  className="cursor-target flex items-center group"
                 >
                   <div className="bg-blue-900 p-3 rounded-lg mr-4 border border-blue-600 group-hover:border-blue-400 transition-colors">
                     <Mail className="text-blue-400" size={20} />
@@ -120,7 +120,7 @@ const Contact = () => {
                 
                 <motion.div 
                   whileHover={{ x: 10 }}
-                  className="flex items-center group"
+                  className="cursor-target flex items-center group"
                 >
                   <div className="bg-green-900 p-3 rounded-lg mr-4 border border-green-600 group-hover:border-green-400 transition-colors">
                     <Phone className="text-green-400" size={20} />
@@ -133,7 +133,7 @@ const Contact = () => {
                 
                 <motion.div 
                   whileHover={{ x: 10 }}
-                  className="flex items-center group"
+                  className="cursor-target flex items-center group"
                 >
                   <div className="bg-red-900 p-3 rounded-lg mr-4 border border-red-600 group-hover:border-red-400 transition-colors">
                     <MapPin className="text-red-400" size={20} />
@@ -148,7 +148,7 @@ const Contact = () => {
               <p className="text-green-400 font-mono mt-6">{'}'}</p>
             </div>
 
-            <div className="bg-gray-900 border border-gray-700 rounded-lg p-8 hover:border-green-400 transition-all duration-300">
+            <div className="cursor-target bg-gray-900 border border-gray-700 rounded-lg p-8 hover:border-green-400 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-6 font-mono">
                 <span className="text-green-400">const</span> socialLinks = <span className="text-green-400">[</span>
               </h3>
@@ -165,7 +165,7 @@ const Contact = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`bg-${social.color}-900 text-${social.color}-400 p-4 rounded-lg hover:bg-${social.color}-800 transition-all duration-200 border border-${social.color}-600 hover:border-${social.color}-400 text-center group`}
+                    className={`cursor-target bg-${social.color}-900 text-${social.color}-400 p-4 rounded-lg hover:bg-${social.color}-800 transition-all duration-200 border border-${social.color}-600 hover:border-${social.color}-400 text-center group`}
                   >
                     <social.icon size={24} className="mx-auto mb-2" />
                     <p className="text-xs font-mono">{social.name}</p>
@@ -181,7 +181,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="bg-gray-900 border border-gray-700 rounded-lg p-8 hover:border-green-400 transition-all duration-300"
+            className="cursor-target bg-gray-900 border border-gray-700 rounded-lg p-8 hover:border-green-400 transition-all duration-300"
           >
             <h3 className="text-2xl font-bold text-white mb-6 font-mono">
               <span className="text-green-400">function</span> sendMessage() <span className="text-green-400">{'{'}</span>
@@ -262,7 +262,7 @@ const Contact = () => {
     whileTap={{ scale: 0.98 }}
     type="submit"
     disabled={isSubmitting}
-    className="w-full bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-200 flex items-center justify-center space-x-2 border border-green-500 font-mono disabled:opacity-50 disabled:cursor-not-allowed"
+    className="cursor-target w-full bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-200 flex items-center justify-center space-x-2 border border-green-500 font-mono disabled:opacity-50 disabled:cursor-not-allowed"
   >
     {isSubmitting ? (
       <>
@@ -287,7 +287,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="mt-16 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-8 text-center"
+          className="cursor-target mt-16 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-8 text-center"
         >
           <MessageSquare className="text-green-400 mx-auto mb-4" size={48} />
           <h3 className="text-2xl font-bold text-white mb-4 font-mono">

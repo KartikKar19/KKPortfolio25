@@ -25,7 +25,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-4 text-white font-mono">
               <span className="text-red-500">😈</span><span className="text-green-400">&lt;</span>DevilBuri<span className="text-green-400">/&gt;</span>
             </h3>
-            <div className="bg-gray-900 border border-gray-700 rounded-lg p-4 font-mono">
+            <div className="cursor-target bg-gray-900 border border-gray-700 rounded-lg p-4 font-mono">
               <p className="text-gray-300 text-sm">
                 <span className="text-blue-400">const</span> developer = <span className="text-green-400">{'{'}</span><br/>
                 <span className="ml-4 text-blue-400">name:</span> <span className="text-yellow-400">"Kartik Kar"</span>,<br/>
@@ -50,7 +50,7 @@ const Footer = () => {
                   <motion.button
                     whileHover={{ x: 10 }}
                     onClick={() => scrollToSection(item.toLowerCase())}
-                    className="text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm"
+                    className="cursor-target text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm"
                   >
                     <span className="text-gray-600">"{item.toLowerCase()}"</span>{index < 5 ? ',' : ''}
                   </motion.button>
@@ -82,13 +82,13 @@ const Footer = () => {
                   href={social.href}
                   target={social.href.startsWith('mailto:') ? '_self' : '_blank'}
                   rel="noopener noreferrer"
-                  className={`text-gray-400 hover:text-${social.color}-400 transition-colors duration-200 bg-gray-900 p-2 rounded-lg border border-gray-700 hover:border-${social.color}-400`}
+                  className={`cursor-target text-gray-400 hover:text-${social.color}-400 transition-colors duration-200 bg-gray-900 p-2 rounded-lg border border-gray-700 hover:border-${social.color}-400`}
                 >
                   <social.icon size={20} />
                 </motion.a>
               ))}
             </div>
-            <div className="bg-gray-900 border border-gray-700 rounded-lg p-3 font-mono text-sm">
+            <div className="cursor-target bg-gray-900 border border-gray-700 rounded-lg p-3 font-mono text-sm">
               <p className="text-gray-400">
                 <span className="text-blue-400">email:</span> <span className="text-yellow-400">"kar.kartik19@gmail.com"</span><br/>
                 <span className="text-blue-400">location:</span> <span className="text-yellow-400">"New Delhi, India"</span>
@@ -104,7 +104,7 @@ const Footer = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="bg-gray-900 border border-gray-700 rounded-lg p-4 font-mono"
+            className="cursor-target bg-gray-900 border border-gray-700 rounded-lg p-4 font-mono"
           >
             <div className="flex flex-col md:flex-row justify-between items-center text-sm">
               <p className="text-gray-400 mb-4 md:mb-0">

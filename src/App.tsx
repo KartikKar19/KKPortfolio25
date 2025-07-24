@@ -1,3 +1,4 @@
+import TargetCursor from './components/TargetCursor';
 import React from 'react';
 import AnimalAnimations from './components/CatAnimations';
 import Navbar from './components/Navbar';
@@ -19,6 +20,7 @@ function App() {
   }, []);
   return (
     <div className="min-h-screen bg-black text-white">
+      <TargetCursor spinDuration={2} hideDefaultCursor={true} />
       <AnimalAnimations />
       <Navbar />
       <Hero />

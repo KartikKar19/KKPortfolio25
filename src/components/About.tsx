@@ -59,7 +59,7 @@ const About = () => {
             <h3 className="text-3xl font-bold text-white mb-6 font-mono">
               <span className="text-green-400">const</span> kartik = {'{'}
             </h3>
-            <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 mb-6 font-mono">
+            <div className="cursor-target bg-gray-800 border border-gray-700 rounded-lg p-6 mb-6 font-mono">
               <p className="text-gray-300 mb-4">
                 <span className="text-blue-400">university:</span> <span className="text-yellow-400">"VIT Vellore"</span>,
               </p>
@@ -82,7 +82,7 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-4 sm:gap-6">
               {[
-                { icon: Code, title: 'Clean Code', desc: 'Maintainable & scalable', color: 'blue' },
+                { icon: Code, title: 'Clean Code', desc: 'Maintainable & scalable', color: 'blue'  },
                 { icon: Terminal, title: 'Problem Solver', desc: 'Creative solutions', color: 'green' },
                 { icon: Coffee, title: 'Always Learning', desc: 'Staying current', color: 'yellow' },
                 { icon: Heart, title: 'User Focused', desc: 'Great experiences', color: 'red' }
@@ -90,7 +90,7 @@ const About = () => {
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05 }}
-                  className="text-center bg-gray-800 border border-gray-700 rounded-lg p-3 sm:p-4 hover:border-green-400 transition-all duration-200"
+                  className="cursor-target text-center bg-gray-800 border border-gray-700 rounded-lg p-3 sm:p-4 hover:border-green-400 transition-all duration-200"
                 >
                   <div className={`bg-${item.color}-900 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3 border border-${item.color}-600`}>
                     <item.icon className={`text-${item.color}-400`} size={24} />

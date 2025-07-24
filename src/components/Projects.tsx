@@ -28,8 +28,8 @@ const Projects = () => {
       description: 'Dynamic Online Food Delivery Web App incorporating GSAP, Tailwind and Material UI with 100% device compatibility and 35% reduction in negative reviews.',
       image: 'https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['MERN Stack', 'GSAP', 'Tailwind', 'Material UI'],
-      stars: 89,
-      forks: 23,
+      stars: 0,
+      forks: 0,
       github: 'https://github.com/KartikKar19/Tomato-Food-Delivery-Website',
       demo: 'https://example.com',
       featured: true
@@ -143,7 +143,7 @@ const Projects = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ scale: 1.02 }}
-                className={`bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden hover:border-green-400 transition-all duration-300 ${
+                className={`cursor-target bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden hover:border-green-400 transition-all duration-300 ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 } flex flex-col md:flex`}
               >
@@ -245,7 +245,7 @@ const Projects = () => {
                   key={repo.id}
                   variants={itemVariants}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400 transition-all duration-300 shadow-lg"
+                  className="cursor-target bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400 transition-all duration-300 shadow-lg"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <h4 className="text-lg font-bold text-white font-mono truncate">{repo.name}</h4>

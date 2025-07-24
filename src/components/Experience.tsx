@@ -109,7 +109,7 @@ const Experience = () => {
               <motion.div 
                 key={index} 
                 variants={itemVariants}
-                className="relative mb-12 md:mb-16"
+                className="cursor-target relative mb-12 md:mb-16"
               >
                 <div className="flex items-center mb-4">
                   <motion.div 

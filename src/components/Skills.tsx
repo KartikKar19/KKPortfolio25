@@ -44,7 +44,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="mt-16 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-8 text-center"
+          className="cursor-target mt-16 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-8 text-center"
         >
           <h3 className="text-2xl font-bold text-white mb-4 font-mono">
             <span className="text-green-400">while</span> (alive) <span className="text-green-400">{'{'}</span>
