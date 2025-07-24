@@ -53,7 +53,7 @@ const Navbar = () => {
             onClick={() => scrollToSection('home')}
             className="text-2xl font-bold font-mono text-white hover:text-green-400 transition-colors duration-200"
           >
-            <span className="text-red-500"> </span>😈DevilBuri 
+            <span className="text-red-500"> </span>😈KK 
           </motion.button>
           <br />
 
