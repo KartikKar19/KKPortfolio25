@@ -11,8 +11,12 @@ import Experience from './components/Experience';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { initVoiceAgent } from './utils/voiceAgent';
 
 function App() {
+  React.useEffect(() => {
+    initVoiceAgent();
+  }, []);
   return (
     <div className="min-h-screen bg-black text-white">
       <AnimalAnimations />
