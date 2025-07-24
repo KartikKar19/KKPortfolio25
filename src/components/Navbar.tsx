@@ -15,12 +15,16 @@ const Navbar = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+  setIsOpen(false); // Close the mobile menu
+
+  setTimeout(() => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
     }
-  };
+  }, 100); // Delay slightly so the mobile menu closes before scrolling
+};
+
 
   const navItems = [
     { name: 'Home', id: 'home', icon: Home },
