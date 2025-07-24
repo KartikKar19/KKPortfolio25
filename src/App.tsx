@@ -13,7 +13,7 @@ import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { initVoiceAgent } from './utils/voiceAgent';
-
+import CurvedLoopsSection from './components/CurvedLoopsSection';
 function App() {
   React.useEffect(() => {
     initVoiceAgent();
@@ -31,6 +31,7 @@ function App() {
       <LeetCode />
       <Experience />
       <Certifications />
+      <CurvedLoopsSection />
       <Contact />
       <Footer />
     </div>
