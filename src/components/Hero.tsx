@@ -44,7 +44,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
-          className="bg-gray-800 border border-gray-700 rounded-lg p-6 mb-8 font-mono text-left max-w-3xl mx-auto"
+          className="cursor-target bg-gray-800 border border-gray-700 rounded-lg p-6 mb-8 font-mono text-left max-w-3xl mx-auto"
         >
           <div className="flex items-center mb-4">
             <div className="flex space-x-2">
