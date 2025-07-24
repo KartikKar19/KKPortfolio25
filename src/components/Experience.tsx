@@ -109,7 +109,7 @@ const Experience = () => {
               <motion.div 
                 key={index} 
                 variants={itemVariants}
-                className="cursor-target relative mb-12 md:mb-16"
+                className="relative mb-12 md:mb-16"
               >
                 <div className="flex items-center mb-4">
                   <motion.div 
@@ -123,7 +123,7 @@ const Experience = () => {
                 <div className="ml-12 md:ml-0">
                   <motion.div 
                     whileHover={{ scale: 1.02 }}
-                    className={`bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-6 hover:border-green-400 transition-all duration-300 ${
+                    className={`cursor-target bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-6 hover:border-green-400 transition-all duration-300 ${
                       index % 2 === 0 ? 'md:ml-auto md:w-5/12' : 'md:mr-auto md:w-5/12'
                     }`}
                   >
@@ -174,7 +174,7 @@ const Experience = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="mt-16 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-8 text-center"
+          className="cursor-target mt-16 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-lg p-8 text-center"
         >
           <h3 className="text-2xl font-bold text-white mb-4 font-mono">
             <span className="text-green-400">const</span> journey = <span className="text-green-400">{'{'}</span>

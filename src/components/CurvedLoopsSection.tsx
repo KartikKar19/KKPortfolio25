@@ -14,7 +14,7 @@ const CurvedLoopsSection = () => {
         className="text-white text-4xl"
       />
       <CurvedLoop
-        marqueeText="Or ✦ Else ✦ You ✦ Wil ✦ Lose ✦ A ✦ Great ✦ Coder ✦ Or ✦ Else ✦ You ✦ Wil ✦ Lose ✦ A ✦ Great ✦ Coder ✦ Or ✦ Else ✦ You ✦ Wil ✦ Lose ✦ A ✦ Great ✦ Coder "
+        marqueeText="Or ✦ Else ✦ You ✦ Will ✦ Lose ✦ A ✦ Great ✦ Coder ✦ Or ✦ Else ✦ You ✦ Will ✦ Lose ✦ A ✦ Great ✦ Coder ✦ Or ✦ Else ✦ You ✦ Will ✦ Lose ✦ A ✦ Great ✦ Coder "
         speed={2}
         curveAmount={400}
         direction="right"
