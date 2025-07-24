@@ -12,6 +12,7 @@ import {
   Rocket,
   Shield
 } from 'lucide-react';
+import { initVoiceAgent } from '../utils/voiceAgent';
 
 const WebsiteFeatures = () => {
   const features = [
@@ -70,6 +71,20 @@ const WebsiteFeatures = () => {
       description: 'Production-ready code with best practices and clean architecture or else who will give me a job😭😭',
       color: 'text-red-400',
       bgColor: 'bg-red-900'
+    },
+    {
+      icon: Heart,
+      title: 'ElevenLabs Voice Agent',
+      description: 'Integrated ElevenLabs voice agent lets you interact with the site using your voice—because talking to a website is way cooler than just clicking around! 🎤🗣️',
+      color: 'text-pink-400',
+      bgColor: 'bg-pink-900'
+    },
+    {
+      icon: Palette,
+      title: 'EmailJS Integration',
+      description: 'Contact forms powered by EmailJS so you can reach out without leaving the site—no backend required, just pure frontend magic! 📧✨',
+      color: 'text-indigo-400',
+      bgColor: 'bg-indigo-900'
     }
   ];
 
