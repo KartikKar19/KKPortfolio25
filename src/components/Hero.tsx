@@ -67,7 +67,7 @@ const Hero = () => {
           transition={{ delay: 0.9, duration: 0.8 }}
           className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
         >
-          Computer Science Student right now Unemployed, system design, and creating impactful digital solutions.
+          Computer Science Student right now Unemployed but still creating impactful digital solutions.
         </motion.p>
         
         <motion.div 
