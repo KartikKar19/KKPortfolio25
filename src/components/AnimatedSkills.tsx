@@ -12,10 +12,12 @@ const AnimatedSkills = () => {
         { name: 'JavaScript', icon: '🟨', color: 'text-yellow-400' },
         { name: 'HTML5', icon: '🌐', color: 'text-orange-400' },
         { name: 'CSS3', icon: '🎨', color: 'text-blue-300' },
-        { name: 'Tailwind', icon: '💨', color: 'text-cyan-400' },
+        { name: 'Tailwind CSS', icon: '💨', color: 'text-cyan-400' },
         { name: 'Bootstrap', icon: '🅱️', color: 'text-purple-400' },
         { name: 'GSAP', icon: '🎬', color: 'text-green-400' },
-        { name: 'Material UI', icon: '🎨', color: 'text-blue-400' }
+        { name: 'Material UI', icon: '🎨', color: 'text-blue-400' },
+        { name: 'jQuery', icon: '💎', color: 'text-blue-500' },
+        { name: 'Framer Motion', icon: '🎞️', color: 'text-pink-400' }
       ]
     },
     {
@@ -29,21 +31,47 @@ const AnimatedSkills = () => {
         { name: 'Express', icon: '🚀', color: 'text-gray-400' },
         { name: 'REST API', icon: '🌍', color: 'text-blue-600' },
         { name: 'MongoDB', icon: '🍃', color: 'text-green-500' },
-        { name: 'PostgreSQL', icon: '🐘', color: 'text-blue-700' }
+        { name: 'PostgreSQL', icon: '🐘', color: 'text-blue-700' },
+        { name: 'MySQL', icon: '🐬', color: 'text-blue-400' }
       ]
     },
     {
-      title: 'Tools & Others',
+      title: 'DevOps',
       skills: [
-        { name: 'GitHub', icon: '📝', color: 'text-gray-300' },
         { name: 'Docker', icon: '🐳', color: 'text-blue-500' },
         { name: 'Kubernetes', icon: '⚙️', color: 'text-blue-400' },
         { name: 'AWS', icon: '☁️', color: 'text-orange-400' },
         { name: 'Azure', icon: '🔷', color: 'text-blue-500' },
         { name: 'AWS Lambda', icon: '⚡', color: 'text-orange-500' },
+        { name: 'GitHub Actions', icon: '🔄', color: 'text-gray-300' }
+      ]
+    },
+    {
+      title: 'Analytical Skills',
+      skills: [
+        { name: 'PowerBI', icon: '📊', color: 'text-yellow-500' },
+        { name: 'Salesforce', icon: '☁️', color: 'text-blue-600' }
+      ]
+    },
+    {
+      title: 'Integration & Tools',
+      skills: [
+        { name: 'GitHub', icon: '🐙', color: 'text-gray-300' },
+        { name: 'Git', icon: '🔧', color: 'text-red-500' },
+        { name: 'EmailJS', icon: '✉️', color: 'text-pink-400' },
+        { name: 'API Integration', icon: '🔗', color: 'text-green-400' },
+        { name: 'ElevenLabs', icon: '🗣️', color: 'text-indigo-400' },
         { name: 'Figma', icon: '🎨', color: 'text-purple-400' },
-        { name: 'Salesforce', icon: '☁️', color: 'text-blue-600' },
-        { name: 'PowerBI', icon: '📊', color: 'text-yellow-500' }
+        { name: 'Canva', icon: '🖌️', color: 'text-blue-300' },
+        { name: 'SEO Optimization', icon: '🔍', color: 'text-green-500' },
+        { name: 'SEMrush', icon: '📈', color: 'text-orange-400' },
+        { name: 'Google Analytics', icon: '📊', color: 'text-blue-500' },
+        { name: 'Google Search Console', icon: '🕵️', color: 'text-red-400' },
+        { name: 'Keyword Optimization', icon: '🔑', color: 'text-yellow-400' },
+        { name: 'Wix', icon: '🌐', color: 'text-blue-400' },
+        { name: 'n8n', icon: '🔄', color: 'text-green-400' },
+        { name: 'Model', icon: '🤖', color: 'text-purple-500' },
+        { name: 'AI Chatbot', icon: '💬', color: 'text-pink-500' }
       ]
     }
   ];
