@@ -79,7 +79,7 @@ const Navbar = () => {
             <motion.a 
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              href="https://github.com" 
+              href="https://github.com/KartikKar19" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-300 hover:text-green-400 transition-colors duration-200 p-2 rounded-lg hover:bg-gray-800/50"
@@ -89,7 +89,7 @@ const Navbar = () => {
             <motion.a 
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              href="https://leetcode.com" 
+              href="https://leetcode.com/u/Kartikkark/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-green-400 transition-colors duration-200 p-2 rounded-lg hover:bg-gray-800/50"
