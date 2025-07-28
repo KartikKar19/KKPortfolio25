@@ -10,9 +10,20 @@ type VoiceEvent = {
   rawTranscript?: string;
 };
 
+interface ElevenLabsVoiceAgent {
+  init(config: {
+    clientTool: {
+      type: string;
+      identifier: string;
+      name: string;
+    };
+    onEvent: (event: VoiceEvent) => void;
+  }): void;
+}
+
 declare global {
   interface Window {
-    ElevenLabsVoiceAgent?: any;
+    ElevenLabsVoiceAgent?: ElevenLabsVoiceAgent;
   }
 }
 

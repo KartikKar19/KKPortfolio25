@@ -3,6 +3,14 @@ import { Code, Trophy, Target, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
 import fetchLeetCodeStats from '../utils/fetchLeetCodeStats';
 
+interface StatCardProps {
+  icon: React.ComponentType<any>;
+  title: string;
+  value: string | number;
+  subtitle: string;
+  color: string;
+}
+
 
 const LeetCode = () => {
   const [stats, setStats] = useState({
@@ -48,7 +56,7 @@ const LeetCode = () => {
     visible: { opacity: 1, y: 0 }
   };
 
-  const StatCard = ({ icon: Icon, title, value, subtitle, color }: any) => (
+  const StatCard = ({ icon: Icon, title, value, subtitle, color }: StatCardProps) => (
     <motion.div
       variants={itemVariants}
       whileHover={{ scale: 1.05 }}

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Github, ExternalLink, Star, GitFork, Eye, AlarmSmoke, Laptop } from 'lucide-react';
+import { Github, ExternalLink, Star, GitFork } from 'lucide-react';
 import { motion } from 'framer-motion';
 import axios from 'axios';
-import { image } from 'framer-motion/client';
 
 interface GitHubRepo {
   id: number;
@@ -15,6 +14,20 @@ interface GitHubRepo {
   language: string;
   topics: string[];
   updated_at: string;
+}
+
+interface GitHubApiRepo {
+  id: number;
+  name: string;
+  description: string;
+  html_url: string;
+  homepage: string;
+  stargazers_count: number;
+  forks_count: number;
+  language: string;
+  topics: string[];
+  updated_at: string;
+  fork: boolean;
 }
 
 const Projects = () => {
@@ -67,8 +80,8 @@ const Projects = () => {
       });
 
       const filteredRepos = response.data
-        .filter((repo: any) => !repo.fork && repo.description) // remove forks and empty ones
-        .map((repo: any) => ({
+        .filter((repo: GitHubApiRepo) => !repo.fork && repo.description) // remove forks and empty ones
+        .map((repo: GitHubApiRepo) => ({
           id: repo.id,
           name: repo.name,
           description: repo.description,

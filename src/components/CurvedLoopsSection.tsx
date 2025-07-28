@@ -34,4 +34,3 @@ const CurvedLoopsSection = () => {
 };
 
 export default CurvedLoopsSection;
-``

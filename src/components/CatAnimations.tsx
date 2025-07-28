@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const animalEmojis = [
+  '🐱', '🐈', '😺', '😸', '😹', '😻', '🙀', '😿', '😾', // cats
+  '🐶', '🐕', '🦮', '🐕‍🦺', '🐩', '🐺', // dogs
+  '🦊', '🐰', '🐹', '🐭', '🐨', '🐼', // other cute animals
+  '🦝', '🐸', '🐧', '🦉', '🦆', '🐥' // more variety
+];
+
+const corners = [
+  { name: 'top-left', x: -100, y: -100, enterX: 50, enterY: 50 },
+  { name: 'top-right', x: 100, y: -100, enterX: -50, enterY: 50 },
+  { name: 'bottom-left', x: -100, y: 100, enterX: 50, enterY: -50 },
+  { name: 'bottom-right', x: 100, y: 100, enterX: -50, enterY: -50 }
+];
+
 const AnimalAnimations = () => {
   const [animals, setAnimals] = useState<Array<{ id: number; corner: string; delay: number }>>([]);
-
-  const animalEmojis = [
-    '🐱', '🐈', '😺', '😸', '😹', '😻', '🙀', '😿', '😾', // cats
-    '🐶', '🐕', '🦮', '🐕‍🦺', '🐩', '🐺', // dogs
-    '🦊', '🐰', '🐹', '🐭', '🐨', '🐼', // other cute animals
-    '🦝', '🐸', '🐧', '🦉', '🦆', '🐥' // more variety
-  ];
   
-  const corners = [
-    { name: 'top-left', x: -100, y: -100, enterX: 50, enterY: 50 },
-    { name: 'top-right', x: 100, y: -100, enterX: -50, enterY: 50 },
-    { name: 'bottom-left', x: -100, y: 100, enterX: 50, enterY: -50 },
-    { name: 'bottom-right', x: 100, y: 100, enterX: -50, enterY: -50 }
-  ];
-
   useEffect(() => {
     const createAnimal = () => {
       const corner = corners[Math.floor(Math.random() * corners.length)];

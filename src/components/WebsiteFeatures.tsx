@@ -12,7 +12,6 @@ import {
   Rocket,
   Shield
 } from 'lucide-react';
-import { initVoiceAgent } from '../utils/voiceAgent';
 
 const WebsiteFeatures = () => {
   const features = [
